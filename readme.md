@@ -2,6 +2,8 @@
 
 A tool to batch export all projects in gitlab to aliyun OSS bucket
 
+## [中文文档](https://github.com/yezhoujie/gitlab-exporter/blob/main/readme-cn.md)
+
 ## usage
 
 ```
