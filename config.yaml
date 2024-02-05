@@ -2,7 +2,6 @@ gitlab:
   url: "http://git.example.com" # gitlab地址
   token: "yourGitLabToken" # gitlab token
 oss:
-  url: "http://oss-cn-hangzhou.aliyuncs.com" # oss地址
   accessKeyId: "yourAliyunAccessKeyId" # oss accessKeyId
   accessSecret: "yourAliyunAccessKeyIdSecret" # oss accessSecret
   bucketName: "yourBackupBucketName" # 备份存储的 oss bucketName
