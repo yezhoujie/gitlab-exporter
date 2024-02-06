@@ -89,6 +89,7 @@ func backupProjectToOss(gitlabClient *gitlab.Client, keepLocalBackup bool, proje
 	for !isFinished(gitlabClient, project.ProjectId) {
 		time.Sleep(5 * time.Second)
 	}
+	time.Sleep(5 * time.Second)
 	DownloadThenToOss(gitlabClient, project, bucket, keepLocalBackup)
 }
 
