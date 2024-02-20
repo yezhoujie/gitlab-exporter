@@ -9,6 +9,7 @@ require (
 )
 
 require (
+	github.com/elulcao/progress-bar v0.1.1
 	github.com/golang/protobuf v1.5.3 // indirect
 	github.com/google/go-querystring v1.1.0 // indirect
 	github.com/hashicorp/go-cleanhttp v0.5.2 // indirect

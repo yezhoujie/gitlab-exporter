@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"log"
 
+	pd "github.com/elulcao/progress-bar/cmd"
 	"github.com/xanzy/go-gitlab"
 )
 
@@ -50,8 +51,11 @@ func main() {
 	fmt.Printf("get %v projects to backup\n", len(ProjectList))
 	bucket := getOssBucket(config)
 
+	bar := pd.NewPBar()
+	bar.Total = uint16(len(ProjectList))
 	// 备份项目
-	for _, project := range ProjectList {
+	for i, project := range ProjectList {
+		bar.RenderPBar(i + 1)
 		// 将当前时间yyyymmddhhmm作为备份文件夹名称
 		// folderName := time.Now().Format("20060102")
 		// projectName := folderName + "/" + project.ProjectName
